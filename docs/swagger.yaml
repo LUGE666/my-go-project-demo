@@ -1,0 +1,21 @@
+basePath: '{{.BasePath}}'
+host: '{{.Host}}'
+info:
+  contact: {}
+  description: gin-shop商城后台管理系统
+  license:
+    name: apache2
+  termsOfService: https://gitee.com/guchengwuyue/gin-shop
+  title: gin-shop  API
+  version: "1.0"
+paths:
+  /pass/sendCode:
+    get:
+      description: 发送验证码
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Helloworld'
+            type: object
+swagger: "2.0"

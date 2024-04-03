@@ -1,0 +1,31 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "gin-shop商城后台管理系统",
+        "title": "gin-shop  API",
+        "termsOfService": "https://gitee.com/guchengwuyue/gin-shop",
+        "contact": {},
+        "license": {
+            "name": "apache2"
+        },
+        "version": "1.0"
+    },
+    "host": "{{.Host}}",
+    "basePath": "{{.BasePath}}",
+    "paths": {
+        "/pass/sendCode": {
+            "get": {
+                "description": "发送验证码",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Helloworld"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
