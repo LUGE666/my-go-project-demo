@@ -2,7 +2,7 @@ package admin
 
 import (
 	"fmt"
-	"ginshop57/models"
+	"my-go-project-demo/models"
 	"math"
 	"net/http"
 	"strings"

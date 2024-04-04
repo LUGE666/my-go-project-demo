@@ -1,4 +1,9 @@
 basePath: '{{.BasePath}}'
+definitions:
+  gin.H:
+    additionalProperties:
+      type: object
+    type: object
 host: '{{.Host}}'
 info:
   contact: {}
@@ -16,6 +21,6 @@ paths:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/Helloworld'
+            $ref: '#/definitions/gin.H'
             type: object
 swagger: "2.0"

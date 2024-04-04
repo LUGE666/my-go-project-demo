@@ -3,7 +3,7 @@ package admin
 import (
 	"encoding/json"
 	"fmt"
-	"ginshop57/models"
+	"my-go-project-demo/models"
 	"net/http"
 
 	"github.com/gin-contrib/sessions"

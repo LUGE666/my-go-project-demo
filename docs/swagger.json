@@ -21,10 +21,18 @@
                         "description": "OK",
                         "schema": {
                             "type": "object",
-                            "$ref": "#/definitions/Helloworld"
+                            "$ref": "#/definitions/gin.H"
                         }
                     }
                 }
+            }
+        }
+    },
+    "definitions": {
+        "gin.H": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "object"
             }
         }
     }

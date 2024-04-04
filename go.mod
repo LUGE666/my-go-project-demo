@@ -1,8 +1,9 @@
-module ginshop57
+module my-go-project-demo
 
 go 1.17
 
 require (
+	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/aliyun/aliyun-oss-go-sdk v2.2.0+incompatible
 	github.com/gin-contrib/sessions v0.0.4
 	github.com/gin-gonic/gin v1.7.7
@@ -11,8 +12,11 @@ require (
 	github.com/hunterhug/go_image v1.0.1
 	github.com/mojocn/base64Captcha v1.3.5
 	github.com/objcoding/wxpay v1.0.6
+	github.com/olivere/elastic/v7 v7.0.31
 	github.com/skip2/go-qrcode v0.0.0-20200617195104-da1b6568686e
 	github.com/smartwalle/alipay/v3 v3.1.6
+	github.com/swaggo/gin-swagger v1.3.0
+	github.com/swaggo/swag v1.5.1
 	gopkg.in/ini.v1 v1.66.2
 	gorm.io/driver/mysql v1.2.2
 	gorm.io/gorm v1.22.4
@@ -47,12 +51,9 @@ require (
 	github.com/mattn/go-isatty v0.0.12 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.1 // indirect
-	github.com/olivere/elastic/v7 v7.0.31 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/smartwalle/crypto4go v1.0.2 // indirect
-	github.com/swaggo/gin-swagger v1.3.0 // indirect
-	github.com/swaggo/swag v1.5.1 // indirect
 	github.com/ugorji/go/codec v1.1.13 // indirect
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
 	golang.org/x/image v0.0.0-20190501045829-6d32002ffd75 // indirect

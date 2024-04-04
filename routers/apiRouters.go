@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"ginshop57/controllers/api"
+	"my-go-project-demo/controllers/api"
 
 	"github.com/gin-gonic/gin"
 )

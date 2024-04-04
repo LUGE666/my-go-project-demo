@@ -2,7 +2,7 @@ package itying
 
 import (
 	"fmt"
-	"ginshop57/models"
+	"my-go-project-demo/models"
 	"net/http"
 	"regexp"
 	"strings"
@@ -15,7 +15,7 @@ type PassController struct {
 	BaseController
 }
 
-//获取验证码
+// 获取验证码
 func (con PassController) Captcha(c *gin.Context) {
 	id, b64s, err := models.MakeCaptcha(50, 120, 4)
 
@@ -147,7 +147,7 @@ func (con PassController) DoRegister(c *gin.Context) {
 
 // @Title 发送验证码
 // @Description 发送验证码
-// @Success 200 {object} Helloworld
+// @Success 200 {object} gin.H
 // @router /pass/sendCode [get]
 func (con PassController) SendCode(c *gin.Context) {
 
@@ -288,7 +288,7 @@ func (con PassController) SendCode(c *gin.Context) {
 	}
 }
 
-//验证验证码
+// 验证验证码
 func (con PassController) ValidateSmsCode(c *gin.Context) {
 
 	sign := c.Query("sign")

@@ -1,16 +1,17 @@
 package main
 
 import (
-	"ginshop57/models"
-	"ginshop57/routers"
 	"html/template"
+	"my-go-project-demo/models"
+	"my-go-project-demo/routers"
+
+	docs "my-go-project-demo/docs"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/cookie"
 	"github.com/gin-gonic/gin"
-	"github.com/swaggo/gin-swagger"
+	ginSwagger "github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
-	docs "github.com/my-go-project-demo/docs"
 )
 
 // @title gin-shop  API
@@ -36,7 +37,8 @@ func main() {
 	r.LoadHTMLGlob("templates/**/**/*")
 	//配置静态web目录   第一个参数表示路由, 第二个参数表示映射的目录
 	r.Static("/static", "./static")
-	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+	// http://localhost:8080/swagger/index.html
+	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler, ginSwagger.URL("http://localhost:8080/swagger/doc.json")))
 
 	// 创建基于 cookie 的存储引擎，secret11111 参数是用于加密的密钥
 	store := cookie.NewStore([]byte("secret111"))

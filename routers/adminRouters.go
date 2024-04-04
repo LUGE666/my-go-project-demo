@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"ginshop57/controllers/admin"
-	"ginshop57/middlewares"
+	"my-go-project-demo/controllers/admin"
+	"my-go-project-demo/middlewares"
 
 	"github.com/gin-gonic/gin"
 )

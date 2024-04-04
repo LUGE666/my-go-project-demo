@@ -1,7 +1,7 @@
 package itying
 
 import (
-	"ginshop57/models"
+	"my-go-project-demo/models"
 	"math"
 
 	"github.com/gin-gonic/gin"

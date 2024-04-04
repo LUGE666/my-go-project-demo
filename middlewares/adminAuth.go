@@ -3,7 +3,7 @@ package middlewares
 import (
 	"encoding/json"
 	"fmt"
-	"ginshop57/models"
+	"my-go-project-demo/models"
 	"os"
 	"strings"
 

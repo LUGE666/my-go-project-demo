@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"ginshop57/models"
+	"my-go-project-demo/models"
 	"reflect"
 	"strconv"
 

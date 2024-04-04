@@ -1,7 +1,7 @@
 package admin
 
 import (
-	"ginshop57/models"
+	"my-go-project-demo/models"
 	"net/http"
 	"strings"
 
