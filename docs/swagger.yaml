@@ -19,7 +19,7 @@ paths:
       description: 发送验证码
       responses:
         "200":
-          description: OK
+          description: 'msg": "","data": "","code": 200}'
           schema:
             $ref: '#/definitions/gin.H'
             type: object

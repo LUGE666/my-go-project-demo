@@ -147,7 +147,7 @@ func (con PassController) DoRegister(c *gin.Context) {
 
 // @Title 发送验证码
 // @Description 发送验证码
-// @Success 200 {object} gin.H
+// @Success 200 {object} gin.H {"msg": "","data": "","code": 200}
 // @router /pass/sendCode [get]
 func (con PassController) SendCode(c *gin.Context) {
 
